@@ -14,3 +14,7 @@ find_program (OBJCOPY_PATH NAMES "llvm-objcopy" "llvm-objcopy-10" "llvm-objcopy-
 mkdir Clickhouse/build
 cd Clickhouse/build
 cmake .. -DCMAKE_CXX_COMPILER=`which clang++` -DCMAKE_C_COMPILER=`which clang` -DCMAKE_BUILD_TYPE=Debug
+ninja clickhouse-bundle
+cd ..
+
+### Import
